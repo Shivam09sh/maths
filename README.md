@@ -35,11 +35,11 @@ The dataset (`student-dta.csv` or `students_data.csv`) contains:
 | `final_marks` | Final exam marks (0 if ineligible) | 0-100 |
 | `eligible` | Eligibility status | Yes/No |
 
-### Current Dataset Stats (50 students):
-- **Eligible students**: 33 (66%)
-- **Ineligible students**: 17 (34%)
-- **Passing students** (among eligible): 30 (90.9%)
-- **Failing students** (among eligible): 3 (9.1%)
+### Current Dataset Stats (100 students):
+- **Eligible students**: 83 (83%)
+- **Ineligible students**: 17 (17%)
+- **Passing students** (among eligible): 78 (94%)
+- **Failing students** (among eligible): 5 (6%)
 
 ## 🚀 How to Run
 
@@ -98,10 +98,8 @@ Reason: Minimum 75% attendance required for final exam eligibility
 ## 🔍 Model Training
 
 - **Training Data**: Only eligible students (≥75% attendance) are used for training
-- **Linear Regression R² Score**: 0.6934
-- **Logistic Regression Accuracy**: 84.85%
-
-This ensures predictions are based on realistic data from students who actually took the exam.
+- Models trained on 83 eligible students from the dataset
+- Ensures predictions are based on realistic data from students who actually took the exam
 
 ## 📁 Files
 
